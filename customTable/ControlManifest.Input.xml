@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="nttnamespace" 
+           constructor="customTable" 
+           version="1.1.0" 
+           display-name-key="Custom_Table" 
+           description-key="Custom_Table_Description" 
+           control-type="standard">
+    
+    <property name="dataJSON" 
+              display-name-key="Data_JSON" 
+              description-key="Data_in_JSON_format" 
+              of-type="Multiple" 
+              usage="input" 
+              required="true" />
+    
+    <property name="viewButtonColor" 
+              display-name-key="View_Button_Color" 
+              description-key="Color_of_view_button" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              default-value="#007bff" />
+    
+    <property name="editButtonColor" 
+              display-name-key="Edit_Button_Color" 
+              description-key="Color_of_edit_button" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              default-value="#28a745" />
+    
+    <property name="deleteButtonColor" 
+              display-name-key="Delete_Button_Color" 
+              description-key="Color_of_delete_button" 
+              of-type="SingleLine.Text" 
+              usage="input" 
+              default-value="#dc3545" />
+    
+    <property name="showDeleteButton" 
+              display-name-key="Show_Delete_Button" 
+              description-key="Show_or_hide_delete_button" 
+              of-type="TwoOptions" 
+              usage="input" 
+              default-value="true" />
+    
+    <property name="selectedViewRecordId" 
+              display-name-key="Selected_View_Record_Id" 
+              description-key="ID_of_record_for_view_action" 
+              of-type="SingleLine.Text" 
+              usage="output" />
+    
+    <property name="selectedEditRecordId" 
+              display-name-key="Selected_Edit_Record_Id" 
+              description-key="ID_of_record_for_edit_action" 
+              of-type="SingleLine.Text" 
+              usage="output" />
+    
+    <property name="selectedDeleteRecordId" 
+              display-name-key="Selected_Delete_Record_Id" 
+              description-key="ID_of_record_for_delete_action" 
+              of-type="SingleLine.Text" 
+              usage="output" />
+    
+    <property name="lastActionTimestamp" 
+              display-name-key="Last_Action_Timestamp" 
+              description-key="Timestamp_of_last_action" 
+              of-type="SingleLine.Text" 
+              usage="output" />
+    
+    <external-service-usage enabled="false" />
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/customTable.css" order="1" />
+    </resources>
+    
+  </control>
+</manifest>

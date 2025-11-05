@@ -1,0 +1,108 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/maxcm/Desktop/PCF/solution/solution.cdsproj": {}
+  },
+  "projects": {
+    "/Users/maxcm/Desktop/PCF/PCF.pcfproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maxcm/Desktop/PCF/PCF.pcfproj",
+        "projectName": "PCF",
+        "projectPath": "/Users/maxcm/Desktop/PCF/PCF.pcfproj",
+        "packagesPath": "/Users/maxcm/.nuget/packages/",
+        "outputPath": "/Users/maxcm/Desktop/PCF/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/maxcm/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.PowerApps.MSBuild.Pcf": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/maxcm/Desktop/PCF/solution/solution.cdsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maxcm/Desktop/PCF/solution/solution.cdsproj",
+        "projectName": "solution",
+        "projectPath": "/Users/maxcm/Desktop/PCF/solution/solution.cdsproj",
+        "packagesPath": "/Users/maxcm/.nuget/packages/",
+        "outputPath": "/Users/maxcm/Desktop/PCF/solution/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/maxcm/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/Users/maxcm/Desktop/PCF/PCF.pcfproj": {
+                "projectPath": "/Users/maxcm/Desktop/PCF/PCF.pcfproj"
+              }
+            }
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.PowerApps.MSBuild.Solution": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
