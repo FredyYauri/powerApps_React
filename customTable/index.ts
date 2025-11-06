@@ -10,10 +10,9 @@ export class customTable implements ComponentFramework.StandardControl<IInputs, 
   private _context: ComponentFramework.Context<IInputs>;
   private _root: Root | null = null;
   
-  private _selectedViewRecordId: string | undefined;
-  private _selectedEditRecordId: string | undefined;
-  private _selectedDeleteRecordId: string | undefined;
+  private _selectedRecordId: string | undefined;
   private _lastActionTimestamp: string | undefined;
+  private _lastActionType: string | undefined;
   
     /**
      * Empty constructor.
@@ -42,7 +41,7 @@ export class customTable implements ComponentFramework.StandardControl<IInputs, 
   
   public updateView(context: ComponentFramework.Context<IInputs>): void {
     this._context = context;
-    
+
     const dataJSON = context.parameters.dataJSON.raw || "[]";
     
     let records: ITableRecord[] = [];
@@ -83,32 +82,34 @@ export class customTable implements ComponentFramework.StandardControl<IInputs, 
   }
   
   private handleView(recordId: string): void {
-    alert("Item con id: " + recordId);
-    this._selectedViewRecordId = recordId;
+    this._lastActionType = "view";
+    this._selectedRecordId = recordId;
     this._lastActionTimestamp = new Date().toISOString();
     this._notifyOutputChanged();
+    
   }
   
   private handleEdit(recordId: string): void {
-    alert("Item con id: " + recordId);
-    this._selectedEditRecordId = recordId;
+  this._lastActionType = "edit";
+    
+    this._selectedRecordId = recordId;
     this._lastActionTimestamp = new Date().toISOString();
     this._notifyOutputChanged();
   }
   
   private handleDelete(recordId: string): void {
-    alert("Item con id: " + recordId);
-    this._selectedDeleteRecordId = recordId;
+  this._lastActionType = "delete";
+    
+    this._selectedRecordId = recordId;
     this._lastActionTimestamp = new Date().toISOString();
     this._notifyOutputChanged();
   }
   
   public getOutputs(): IOutputs {
     return {
-      selectedViewRecordId: this._selectedViewRecordId,
-      selectedEditRecordId: this._selectedEditRecordId,
-      selectedDeleteRecordId: this._selectedDeleteRecordId,
-      lastActionTimestamp: this._lastActionTimestamp
+      selectedRecordId: this._selectedRecordId,
+      lastActionTimestamp: this._lastActionTimestamp,
+      lastActionType: this._lastActionType
     };
   }
   

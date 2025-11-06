@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p3lZk1Nr+yg=",
+  "dgSpecHash": "t87/34mbERM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fredy\\Documents\\4. BCP\\POC PCF\\PCF.pcfproj",
+  "projectFilePath": "C:\\Users\\Fredy\\Documents\\1. Proyectos\\React BCP\\powerApps_React\\PCF.pcfproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fredy\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
     "C:\\Users\\Fredy\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net462\\1.0.0\\microsoft.netframework.referenceassemblies.net462.1.0.0.nupkg.sha512",

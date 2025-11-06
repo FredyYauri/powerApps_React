@@ -1,2 +1,4 @@
 C:\Users\Fredy\Documents\4. BCP\POC PCF\obj\Debug\PCF.pcfproj.AssemblyReference.cache
 C:\Users\Fredy\Documents\4. BCP\POC PCF\obj\Debug\PCF.pcfproj.CoreCompileInputs.cache
+C:\Users\Fredy\Documents\1. Proyectos\React BCP\powerApps_React\obj\Debug\PCF.pcfproj.AssemblyReference.cache
+C:\Users\Fredy\Documents\1. Proyectos\React BCP\powerApps_React\obj\Debug\PCF.pcfproj.CoreCompileInputs.cache

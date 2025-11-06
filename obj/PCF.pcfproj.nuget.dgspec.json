@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fredy\\Documents\\4. BCP\\POC PCF\\PCF.pcfproj": {}
+    "C:\\Users\\Fredy\\Documents\\1. Proyectos\\React BCP\\powerApps_React\\PCF.pcfproj": {}
   },
   "projects": {
-    "C:\\Users\\Fredy\\Documents\\4. BCP\\POC PCF\\PCF.pcfproj": {
+    "C:\\Users\\Fredy\\Documents\\1. Proyectos\\React BCP\\powerApps_React\\PCF.pcfproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fredy\\Documents\\4. BCP\\POC PCF\\PCF.pcfproj",
+        "projectUniqueName": "C:\\Users\\Fredy\\Documents\\1. Proyectos\\React BCP\\powerApps_React\\PCF.pcfproj",
         "projectName": "PCF",
-        "projectPath": "C:\\Users\\Fredy\\Documents\\4. BCP\\POC PCF\\PCF.pcfproj",
+        "projectPath": "C:\\Users\\Fredy\\Documents\\1. Proyectos\\React BCP\\powerApps_React\\PCF.pcfproj",
         "packagesPath": "C:\\Users\\Fredy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fredy\\Documents\\4. BCP\\POC PCF\\obj\\",
+        "outputPath": "C:\\Users\\Fredy\\Documents\\1. Proyectos\\React BCP\\powerApps_React\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [

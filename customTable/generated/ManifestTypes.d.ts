@@ -11,8 +11,7 @@ export interface IInputs {
     showDeleteButton: ComponentFramework.PropertyTypes.TwoOptionsProperty;
 }
 export interface IOutputs {
-    selectedViewRecordId?: string;
-    selectedEditRecordId?: string;
-    selectedDeleteRecordId?: string;
+    selectedRecordId?: string;
+    lastActionType?: string;
     lastActionTimestamp?: string;
 }

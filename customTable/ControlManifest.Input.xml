@@ -2,7 +2,7 @@
 <manifest>
   <control namespace="nttnamespace" 
            constructor="customTable" 
-           version="1.1.0" 
+           version="1.1.2" 
            display-name-key="Custom_Table" 
            description-key="Custom_Table_Description" 
            control-type="standard">
@@ -42,22 +42,16 @@
               usage="input" 
               default-value="true" />
     
-    <property name="selectedViewRecordId" 
+    <property name="selectedRecordId" 
               display-name-key="Selected_View_Record_Id" 
               description-key="ID_of_record_for_view_action" 
               of-type="SingleLine.Text" 
               usage="output" />
     
-    <property name="selectedEditRecordId" 
-              display-name-key="Selected_Edit_Record_Id" 
-              description-key="ID_of_record_for_edit_action" 
-              of-type="SingleLine.Text" 
-              usage="output" />
-    
-    <property name="selectedDeleteRecordId" 
-              display-name-key="Selected_Delete_Record_Id" 
-              description-key="ID_of_record_for_delete_action" 
-              of-type="SingleLine.Text" 
+    <property name="lastActionType"
+              display-name-key="Last_Action_Type"
+              description-key="Indicates_which_button_was_clicked"
+              of-type="SingleLine.Text"
               usage="output" />
     
     <property name="lastActionTimestamp" 
